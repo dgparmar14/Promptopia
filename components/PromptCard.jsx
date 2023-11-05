@@ -11,7 +11,7 @@ const PromptCard = ({ post, handLeTagClick, handLeEdit, handLeDelete }) => {
   // console.log(data)/
   const pathname = usePathname();
   // const router = useRouter();
-  console.log(post.prompt)
+  
   const handleCopy = () => {
     setCopied(post.prompt);
     navigator.clipboard.writeText(post.prompt);
