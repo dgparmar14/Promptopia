@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .main {
   width: 100vw;
   min-height: 100vh;
@@ -147,7 +146,7 @@
 
 /* PromptCard Component */
 .prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full max-h-fit;
 }
 
 .flex-center {

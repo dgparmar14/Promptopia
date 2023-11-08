@@ -36,12 +36,13 @@ const MyProfile = () => {
             const data = await response.json();
             setPosts(data);
         }
-
+        
         if (session?.user.id) fetchposts();
     }, [])
 
     return (
-        <Profile name="My"
+        <Profile
+            name="My"
             desc="welcome to your personalized profile page"
             data={posts}
             handLeEdit={handLeEdit}
